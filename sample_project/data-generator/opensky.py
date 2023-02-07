@@ -57,7 +57,7 @@ def get_opensky():
 if __name__ == "__main__":
 
     get_opensky()
-    schedule.every(15).seconds.do(get_opensky)
+    schedule.every(10).seconds.do(get_opensky)
 
     while True:
         schedule.run_pending()
